@@ -1,15 +1,21 @@
-console.log('Iniciando 🚀🚀🚀') 
+console.log(`
+╔═══════════════════════════╗
+║    ANEKA BOT 🪷   ║
+║    Iniciando sistema...   ║
+╚═══════════════════════════╝
+`);
+
 import cfonts from 'cfonts';
 import chalk from 'chalk';
 
-cfonts.say('LoliBot-MD', {
+cfonts.say('Aneka Bot', {
   font: 'chrome',
   align: 'center',
   gradient: ['red', 'magenta'],
   transition: false
 });
 
-cfonts.say('by: elrebelde21', {
+cfonts.say('by: Daniel', {
   font: 'console',
   align: 'center',
   gradient: ['red', 'magenta'],
