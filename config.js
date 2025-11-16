@@ -5,18 +5,18 @@ import fs from 'fs'
 
 //owner
 global.owner = [
-['573226873710'],
-['5214774444444'],
-['593968585383'],
-['13022590512'],
-['595975711894'],
-['595975711894'],
-['5219999699999']
+['18294922391'],
+['5493884539290'],
+['5493884539290'],
+['5493884539290'],
+['18294922391'],
+['18294922391'],
+['18294922391']
 ]
 
 //Información 
 globalThis.info = {
-wm: "𝙇𝙤𝙡𝙞𝘽𝙤𝙩-𝙈𝘿",
+wm: "𝓐𝓷𝓮𝓴𝓪 𝓑𝓸𝓽",
 vs: "2.0.0",
 packname: "𝗦𝗧𝗜𝗖𝗞𝗘𝗥𝗦❤️‍🔥 - LoliBot\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
 author: "Owner: @elrebelde21\n• Dueña: @itschinita_official",
@@ -26,19 +26,19 @@ fgmods: { url: 'https://api.fgmods.xyz/api', key: 'elrebelde21' },
 neoxr: { url: 'https://api.neoxr.eu/api', key: 'GataDios' },
 img2: "https://telegra.ph/file/39fb047cdf23c790e0146.jpg",
 img4: fs.readFileSync('./media/Menu2.jpg'),
-yt: "https://www.youtube.com/@elrebelde.21",
-tiktok: "https://www.tiktok.com/@elrebelde.21",
-md: "https://github.com/elrebelde21/LoliBot-MD",
-fb: "https://www.facebook.com/elrebelde21",
-ig: "https://www.instagram.com/its_china_official",
-nn: "https://chat.whatsapp.com/HNDVUxHphPzG3cJHIwCaX5", //Grupo ofc1
-nn2: "https://chat.whatsapp.com/KDBt6S54riRCIpSZspkxhg", //Grupo ofc2
-nn3: "https://chat.whatsapp.com/GXNXKWSEckU1j1c7sItTxK", //Colab Loli & Gata
-nn4: "https://chat.whatsapp.com/Em4Byf4w5VgHObPvZQlfnM", //Enlace LoliBot
-nn5: "https://chat.whatsapp.com/J5hQvECqR4W6uTT84uiSBx", //A.T.M.M
-nn6: "https://chat.whatsapp.com/ILAHJeZsHh973tQ96i2aqS", //Dev support 
-nna: "https://whatsapp.com/channel/0029Vah0NnV6mYPDQI7bpt0z",
-nna2: "https://whatsapp.com/channel/0029Vah0NnV6mYPDQI7bpt0z"
+yt: "https://chat.whatsapp.com/JydqOKu1AA399bMJOluzY2",
+tiktok: "https://www.instagram.com/anekita.dzn?igsh=a3c0NDlqaGdoMmlv",
+md: "https://chat.whatsapp.com/JydqOKu1AA399bMJOluzY2",
+fb: "https://www.instagram.com/anekita.dzn?igsh=a3c0NDlqaGdoMmlv",
+ig: "https://www.instagram.com/anekita.dzn?igsh=a3c0NDlqaGdoMmlv",
+nn: "https://chat.whatsapp.com/JydqOKu1AA399bMJOluzY2", //Grupo ofc1
+nn2: "https://chat.whatsapp.com/JydqOKu1AA399bMJOluzY2", //Grupo ofc2
+nn3: "https://chat.whatsapp.com/JydqOKu1AA399bMJOluzY2", //Colab Loli & Gata
+nn4: "https://chat.whatsapp.com/JydqOKu1AA399bMJOluzY2", //Enlace LoliBot
+nn5: "https://chat.whatsapp.com/JydqOKu1AA399bMJOluzY2", //A.T.M.M
+nn6: "https://chat.whatsapp.com/JydqOKu1AA399bMJOluzY2", //Dev support 
+nna: "https://whatsapp.com/channel/0029VbBUF7aGzzKZMjHgtZ1z",
+nna2: "https://whatsapp.com/channel/0029VbBUF7aGzzKZMjHgtZ1z"
 }
 
 //----------------------------------------------------
