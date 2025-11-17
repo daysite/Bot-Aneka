@@ -1,26 +1,64 @@
-import MessageType from '@whiskeysockets/baileys'
-import { generateWAMessageFromContent } from '@whiskeysockets/baileys'
+import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
+import * as fs from 'fs'
 
-let handler = async (m, { conn, text, participants }) => {
+var handler = async (m, { conn, text, participants, isOwner, usedPrefix, command, isAdmin }) => {
+if (!m.quoted && !text) return m.reply(`Responde a una imágen o video para notificar`) 
 let users = participants.map(u => conn.decodeJid(u.id))
-let q = m.quoted ? m.quoted : m
-let c = m.quoted ? m.quoted : m.msg
-const msg = conn.cMod(m.chat,
-generateWAMessageFromContent(m.chat, {
-[c.toJSON ? q.mtype : 'extendedTextMessage']: c.toJSON ? c.toJSON() : {
-text: c || '> by lucxxs.qzy'
+if (m.quoted && m.quoted.message) {
+const type = Object.keys(m.quoted.message)[0]
+const isMedia = ['imageMessage', 'videoMessage', 'audioMessage', 'stickerMessage', 'documentMessage'].includes(type)
+if (isMedia) {
+try {
+let mediax = await m.quoted.download()
+let msg = { contextInfo: { mentionedJid: users } }
+if (type === 'imageMessage') {
+msg.image = mediax
+if (text) msg.caption = text
+} else if (type === 'videoMessage') {
+msg.video = mediax
+if (text) msg.caption = text
+} else if (type === 'audioMessage') {
+msg.audio = mediax
+msg.ptt = true
+msg.fileName = 'Hidetag.mp3'
+msg.mimetype = 'audio/mp4'
+} else if (type === 'stickerMessage') {
+msg.sticker = mediax
+} else if (type === 'documentMessage') {
+msg.document = mediax
+msg.fileName = m.quoted.fileName || 'archivo'
+msg.mimetype = m.quoted.mimetype || 'application/octet-stream'
 }
-}, {
-userJid: conn.user.id
-}),
-text || q.text, conn.user.jid, { mentions: users }
-)
-await conn.relayMessage(m.chat, msg.message, { messageId: msg.key.id })
+await conn.sendMessage(m.chat, msg, { quoted: null })
+return
+} catch (e) {
+}}}
+
+let texto = ''
+if (m.quoted?.message) {
+const msg = m.quoted.message
+texto = msg.conversation || msg.extendedTextMessage?.text || msg.imageMessage?.caption || msg.videoMessage?.caption || ''
 }
-handler.help = ['notify']
-handler.tags = ['gc']
-handler.command = /^(hidetag|notify|notificar|notifi|noti|n|hidet|aviso)$/i;
+
+if (!texto && typeof m.originalText === 'string' && m.originalText.length > 0) {
+let prefix = usedPrefix || ''
+let cmd = command || ''
+let original = m.originalText.trimStart()
+if (original.slice(0, prefix.length + cmd.length).toLowerCase() === (prefix + cmd).toLowerCase()) {
+texto = original.slice(prefix.length + cmd.length).trimStart()
+} else {
+texto = original
+}}
+
+try {
+await conn.sendMessage(m.chat, { text: texto, contextInfo: { mentionedJid: users }}, { quoted: null })
+} catch (e) {
+console.error(e)
+}}
+handler.help = ['hidetag']
+handler.tags = ['group']
+handler.command = /^(hidetag|n|notify)$/i
 handler.group = true
 handler.admin = false
-
+handler.register = false
 export default handler
