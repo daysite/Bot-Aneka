@@ -31,9 +31,9 @@ const PlayText = await conn.sendMessage(m.chat, { text: `${yt_play[0].title}
 *👉🏻Aguarde un momento en lo que envío su ${tipoDescarga}*`,  
 contextInfo:{  
 forwardedNewsletterMessageInfo: { 
-newsletterJid: '120363305025805187@newsletter', 
+newsletterJid: '120363401360971612@newsletter', 
 serverMessageId: '', 
-newsletterName: 'LoliBot ✨️' },
+newsletterName: 'Aneka Bot' },
 forwardingScore: 9999999,  
 isForwarded: true,   
 mentionedJid: null,  
