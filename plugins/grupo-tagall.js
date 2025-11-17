@@ -66,7 +66,7 @@ await conn.sendMessage(m.chat, { text: teks, mentions: memberData.map(mem => mem
 handler.help = ['tagall <mensaje>', 'invocar <mensaje>', 'contador']
 handler.tags = ['group']
 handler.command = /^(tagall|invocar|invocacion|todos|invocación|contador)$/i
-handler.admin = true
+handler.admin = false
 handler.group = true
 //handler.botAdmin = true
 
