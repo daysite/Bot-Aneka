@@ -2,7 +2,7 @@ import { generateWAMessageFromContent } from "@whiskeysockets/baileys"
 import * as fs from 'fs'
 
 var handler = async (m, { conn, text, participants, isOwner, usedPrefix, command, isAdmin }) => {
-if (!m.quoted && !text) return m.reply(`𝙔 𝙀𝙇 𝙏𝙀𝙓𝙏𝙊?`) 
+if (!m.quoted && !text) return m.reply(`Responde a una imágen o video para notificar`) 
 let users = participants.map(u => conn.decodeJid(u.id))
 if (m.quoted && m.quoted.message) {
 const type = Object.keys(m.quoted.message)[0]
@@ -57,7 +57,7 @@ console.error(e)
 }}
 handler.help = ['hidetag']
 handler.tags = ['group']
-handler.command = /^(hidetag|notificar|notify)$/i
+handler.command = /^(hidetag|n|notify)$/i
 handler.group = true
 handler.admin = true
 handler.register = true 
