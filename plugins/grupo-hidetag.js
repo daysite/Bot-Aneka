@@ -21,6 +21,6 @@ handler.help = ['notify']
 handler.tags = ['gc']
 handler.command = /^(hidetag|notify|notificar|notifi|noti|n|hidet|aviso)$/i;
 handler.group = true
-handler.admin = true
+handler.admin = false
 
 export default handler
