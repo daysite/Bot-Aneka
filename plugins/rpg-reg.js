@@ -183,9 +183,9 @@ ${pref}menu
 ◉ *Total de usuarios registrados:* ${toNum(rtotalreg + 1)}`,
 contextInfo: {
 forwardedNewsletterMessageInfo: {
-newsletterJid: '120363305025805187@newsletter',
+newsletterJid: '120363401360971612@newsletter',
 serverMessageId: '',
-newsletterName: 'LoliBot ✨️' },
+newsletterName: 'Aneka' },
 forwardingScore: 9999999,
 isForwarded: true,
 externalAdReply: {
@@ -194,7 +194,7 @@ mediaType: 2,
 showAdAttribution: false,
 renderLargerThumbnail: false,
 title: `𝐑𝐄𝐆𝐈𝐒𝐓𝐑𝐎 𝐂𝐎𝐌𝐏𝐋𝐄𝐓𝐀𝐃𝐎`,
-body: 'LoliBot',
+body: 'Aneka',
 previewType: 'PHOTO',
 thumbnailUrl: "https://telegra.ph/file/33bed21a0eaa789852c30.jpg",
 sourceUrl: info.md
