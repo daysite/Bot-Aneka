@@ -62,7 +62,7 @@ const timeLeft = COOLDOWN_DURATION - (now - chatData.lastUsed);
 if (timeLeft > 0) {
 try {
 const senderTag = m.sender ? `@${m.sender.split('@')[0]}` : '@usuario';
-await conn.reply(chatId, `⚠️ Hey ${senderTag}, pendejo, ahí está el menú 🙄\n> Solo se enviará cada 3 minutos para evitar spam, Desplázate hacia arriba para verlo completo. 👆`, chatData.menuMessage || m);
+await conn.reply(chatId, `🍭 Hey ${senderTag}, pendejo, ahí está el menú\n> Solo se enviará cada 3 minutos para evitar spam, Desplázate hacia arriba para verlo completo. 👆`, chatData.menuMessage || m);
 } catch (err) {
 return;
 }
@@ -132,7 +132,7 @@ for (const plugin of comandos) {
 for (const helpCmd of plugin.help) {
 text += defaultMenu.body
 .replace(/%cmd/g, plugin.prefix ? helpCmd : _p + helpCmd)
-.replace(/%islimit/g, plugin.limit ? '(💎)' : '')
+.replace(/%islimit/g, plugin.limit ? '(🍭)' : '')
 .replace(/%isPremium/g, plugin.premium ? '(💵)' : '') + '\n';
 }}
 text += defaultMenu.footer;
@@ -159,7 +159,7 @@ nna2: info.nna2
 text = String(text).replace(new RegExp(`%(${Object.keys(replace).join('|')})`, 'g'), (_, key) => replace[key] ?? '');
 try {
 let pp = fs.readFileSync('./media/Menu2.jpg');
-const menuMessage = await conn.sendMessage(chatId, { text: text, contextInfo: { forwardedNewsletterMessageInfo: { newsletterJid: "120363305025805187@newsletter",newsletterName: "LoliBot ✨️" }, forwardingScore: 999, isForwarded: true, mentionedJid: await conn.parseMention(text), externalAdReply: { mediaUrl:  [info.nna, info.nna2, info.md].getRandom(), mediaType: 2, showAdAttribution: false, renderLargerThumbnail: false, title: "✨️ MENU ✨️", body: `${nombreBot} (${tipo})`, thumbnailUrl: info.img2, sourceUrl: "https://skyultraplus.com" }}}, { quoted: m });
+const menuMessage = await conn.sendMessage(chatId, { text: text, contextInfo: { forwardedNewsletterMessageInfo: { newsletterJid: "120363401360971612@newsletter",newsletterName: "Aneka Bot" }, forwardingScore: 999, isForwarded: true, mentionedJid: await conn.parseMention(text), externalAdReply: { mediaUrl:  [info.nna, info.nna2, info.md].getRandom(), mediaType: 2, showAdAttribution: false, renderLargerThumbnail: false, title: "✨️ MENU ✨️", body: `${nombreBot} (${tipo})`, thumbnailUrl: info.img2, sourceUrl: "https://chat.whatsapp.com/JydqOKu1AA399bMJOluzY2?mode=hqrt2" }}}, { quoted: m });
 cooldowns.set(chatId, { lastUsed: now, menuMessage: menuMessage })
 m.react('🙌');
 } catch (err) {    
