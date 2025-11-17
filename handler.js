@@ -78,7 +78,7 @@ switch (action) {
 case "add":
 if (settings.welcome) {
 const groupDesc = metadata.desc || "*ᴜɴ ɢʀᴜᴘᴏ ɢᴇɴɪᴀ😸*\n *sɪɴ ʀᴇɢʟᴀ 😉*"
-const raw = settings.swelcome || `HOLAA!! @user ¿COMO ESTAS?😃\n\n『Bienvenido A *@group*』\n\nUn gusto conocerte amig@ 🤗\n\n_Recuerda leer las reglas del grupo para no tener ningun problema 🧐_\n\n*Solo disfrutar de este grupo y divertite 🥳*`
+const raw = settings.swelcome || `𝐁𝐢𝐞𝐧𝐯𝐞𝐧𝐢𝐝𝐱 @user 𝐩𝐞𝐝𝐚𝐳𝐨 𝐝𝐞 𝐁𝐨𝐭 𝐧𝐨 𝐦𝐞 𝐯𝐞𝐧𝐠𝐚𝐬 𝐚 𝐫𝐨𝐛𝐚𝐫 𝐞𝐥 𝐩𝐮𝐞𝐬𝐭𝐨 𝐞𝐡', 𝐨𝐣𝐚𝐥𝐚 𝐲 𝐭𝐞 𝐬𝐚𝐪𝐮𝐞𝐧 𝐝𝐞𝐥 𝐠𝐫𝐮𝐩𝐨 𝐩𝐫𝐨𝐧𝐭𝐨💋.`
 const msg = raw
 .replace(/@user/gi, userTag)
 .replace(/@group|@subject/gi, groupName)
@@ -91,15 +91,15 @@ mentionedJid: [participant],
 isForwarded: true,
 forwardingScore: 999999,
 forwardedNewsletterMessageInfo: {
-newsletterJid: ["120363305025805187@newsletter", "120363301598733462@newsletter"].getRandom(),
-newsletterName: "LoliBot ✨️"
+newsletterJid: ["120363401360971612@newsletter", "120363401360971612@newsletter"].getRandom(),
+newsletterName: "Aneka Bot"
 }}}, { quoted: null })
 } else {
 await conn.sendMessage(id, { text: msg,
 contextInfo: {
 forwardedNewsletterMessageInfo: {
-newsletterJid: ["120363305025805187@newsletter", "120363301598733462@newsletter"].getRandom(),
-newsletterName: "LoliBot ✨️"
+newsletterJid: ["120363401360971612@newsletter", "120363401360971612@newsletter"].getRandom(),
+newsletterName: "Aneka Bot"
 },
 forwardingScore: 9999999,
 isForwarded: true,
@@ -110,10 +110,10 @@ mediaType: 2,
 showAdAttribution: false,
 renderLargerThumbnail: false,
 thumbnailUrl: image,
-title: "🌟 WELCOME 🌟",
-body: "Bienvenido al grupo 🤗",
+title: "WELCOME",
+body: "Bienvenido al grupo",
 containsAutoReply: true,
-sourceUrl: "https://skyultraplus.com"
+sourceUrl: "https://chat.whatsapp.com/JydqOKu1AA399bMJOluzY2?mode=hqrt2"
 }}}, { quoted: null })
 }}
 break
@@ -146,15 +146,15 @@ mentionedJid: [participant],
 isForwarded: true,
 forwardingScore: 999999,
 forwardedNewsletterMessageInfo: {
-newsletterJid: ["120363305025805187@newsletter", "120363301598733462@newsletter"].getRandom(),
-newsletterName: "LoliBot ✨️"
+newsletterJid: ["120363401360971612@newsletter", "120363401360971612@newsletter"].getRandom(),
+newsletterName: "Aneka Bot"
 }}}, { quoted: null })
 } else {
 await conn.sendMessage(id, { text: msg,
 contextInfo: {
 forwardedNewsletterMessageInfo: {
-newsletterJid: ["120363305025805187@newsletter", "120363301598733462@newsletter"].getRandom(),
-newsletterName: "LoliBot ✨️"
+newsletterJid: ["120363401360971612@newsletter", "120363401360971612@newsletter"].getRandom(),
+newsletterName: "Aneka Bot"
 },
 forwardingScore: 9999999,
 isForwarded: true,
@@ -163,18 +163,18 @@ externalAdReply: {
 showAdAttribution: true,
 renderLargerThumbnail: true,
 thumbnailUrl: image,
-title: "👋 BYE",
+title: "BYE",
 body: "Se fue un gay",
 containsAutoReply: true,
 mediaType: 1,
-sourceUrl: "https://skyultraplus.com"
+sourceUrl: "https://chat.whatsapp.com/JydqOKu1AA399bMJOluzY2?mode=hqrt2"
 }}}, { quoted: null })
 }}
 break
 
 case "promote": case "daradmin": case "darpoder":
 if (settings.detect) {
-const raw = settings.sPromote || `@user 𝘼𝙃𝙊𝙍𝘼 𝙀𝙎 𝘼𝘿𝙈𝙄𝙉 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊\n\n😼🫵𝘼𝘾𝘾𝙄𝙊𝙉 𝙍𝙀𝘼𝙇𝙄𝙕𝘼𝘿𝘼 𝙋𝙊𝙍: @author`
+const raw = settings.sPromote || `@user TIENE ADMIN DEL GRUPO\n\n> LA ACCIÓN FUE REALIZADA POR: @author`
 const msg = raw
   .replace(/@user/gi, userTag)
   .replace(/@group/gi, groupName)
@@ -183,8 +183,8 @@ const msg = raw
 await conn.sendMessage(id, { text: msg,  
 contextInfo:{  
 forwardedNewsletterMessageInfo: { 
-newsletterJid: ["120363305025805187@newsletter", "120363301598733462@newsletter"].getRandom(),
-newsletterName: "LoliBot ✨️" },
+newsletterJid: ["120363401360971612@newsletter", "120363401360971612@newsletter"].getRandom(),
+newsletterName: "Aneka Bot" },
 forwardingScore: 9999999,  
 isForwarded: true,   
 mentionedJid: [participant, author],
@@ -194,17 +194,17 @@ mediaType: 2,
 showAdAttribution: false,  
 renderLargerThumbnail: false,  
 title: "NUEVO ADMINS 🥳",
-body: "Weon eres admin portante mal 😉",
+body: "Weon eres admin portante mal",
 containsAutoReply: true,  
 thumbnailUrl: image,
-sourceUrl: "skyultraplus.com"
+sourceUrl: "https://chat.whatsapp.com/JydqOKu1AA399bMJOluzY2?mode=hqrt2"
 }}}, { quoted: null })         
 }
 break
 
 case "demote": case "quitaradmin": case "quitarpoder":
 if (settings.detect) {
-const raw = settings.sDemote || `@user 𝘿𝙀𝙅𝘼 𝘿𝙀 𝙎𝙀𝙍 𝘼𝘿𝙈𝙄𝙉 𝙀𝙉 𝙀𝙎𝙏𝙀 𝙂𝙍𝙐𝙋𝙊\n\n😼🫵𝘼𝘾𝘾𝙄𝙊𝙉 𝙍𝙀𝘼𝙇𝙄𝙕𝘼𝘿𝘼 𝙋𝙊𝙍: @author`
+const raw = settings.sDemote || `@user LE QUITARON EL ADMIN\n\n> LA ACCIÓN FUE REALIZADA POR: @author`
 const msg = raw
   .replace(/@user/gi, userTag)
   .replace(/@group/gi, groupName)
@@ -213,8 +213,8 @@ const msg = raw
 await conn.sendMessage(id, { text: msg,  
 contextInfo:{  
 forwardedNewsletterMessageInfo: { 
-newsletterJid: ["120363305025805187@newsletter", "120363301598733462@newsletter"].getRandom(),
-newsletterName: "LoliBot ✨️" },
+newsletterJid: ["120363401360971612@newsletter", "120363401360971612@newsletter"].getRandom(),
+newsletterName: "Aneka Bot" },
 forwardingScore: 9999999,  
 isForwarded: true,   
 mentionedJid: [participant, author],
@@ -224,11 +224,11 @@ mediaType: 2,
 showAdAttribution: false,  
 renderLargerThumbnail: false,  
 title: "📛 UN ADMINS MENOS",
-body: "Jjjj Ya no eres admin 😹",
+body: "Ya no eres admin 😹",
 containsAutoReply: true,  
 mediaType: 1,   
 thumbnailUrl: image,
-sourceUrl: "skyultraplus.com"
+sourceUrl: "https://chat.whatsapp.com/JydqOKu1AA399bMJOluzY2?mode=hqrt2"
 }}}, { quoted: null })            
 }
 break
@@ -273,8 +273,8 @@ contextInfo: {
 isForwarded: true,
 forwardingScore: 1,
 forwardedNewsletterMessageInfo: {
-newsletterJid: ["120363305025805187@newsletter", "120363301598733462@newsletter"].getRandom(),
-newsletterName: "LoliBot ✨️",
+newsletterJid: ["120363401360971612@newsletter", "120363401360971612@newsletter"].getRandom(),
+newsletterName: "Aneka Bot",
 serverMessageId: 1
 }}
 });
@@ -294,8 +294,8 @@ contextInfo: {
 isForwarded: true,
 forwardingScore: 1,
 forwardedNewsletterMessageInfo: {
-newsletterJid: ["120363305025805187@newsletter", "120363301598733462@newsletter"].getRandom(),
-newsletterName: "LoliBot ✨️",
+newsletterJid: ["120363401360971612@newsletter", "120363401360971612@newsletter"].getRandom(),
+newsletterName: "Aneka Bot",
 serverMessageId: 1
 }}
 });
@@ -367,8 +367,8 @@ mentionedJid: await conn.parseMention(text),
 isForwarded: true,
 forwardingScore: 1,
 forwardedNewsletterMessageInfo: {
-newsletterJid: "120363305025805187@newsletter",
-newsletterName: "LoliBot ✨️"
+newsletterJid: "120363401360971612@newsletter",
+newsletterName: "Aneka Bot"
 }};
 return await conn.sendMessage(chatId, { text, contextInfo }, { quoted: m });
 };
@@ -725,17 +725,17 @@ console.log(isAdmin)
 console.error(e);
 }}
 
-if (plugin.owner && !isOwner) return m.reply("⚠️ Tu que? no eres mi propietario para venir a dame orden 🙄, solo el dueño del sub-bot o el owner puede usar este comando.");
-if (plugin.rowner && !isROwner) return m.reply("⚠️ Tu que? no eres mi propietario para venir a dame orden 🙄.");
-if (plugin.admin && !isAdmin) return m.reply("🤨 No eres admins. Solo los admins pueden usar este comando.");
-if (plugin.botAdmin && !isBotAdmin) return m.reply(`⚠️ haz admin al Bot "YO" para poder usar este comando.`);
-if (plugin.group && !isGroup) return m.reply("⚠️ Estos es un grupo?, este comando solo funciona el grupo");
-if (plugin.private && isGroup) return m.reply("⚠️ Este comando solo funciona el pv");
+if (plugin.owner && !isOwner) return m.reply("🪭𝘖𝘬 𝘮𝘢ñ𝘢𝘯𝘢 💜 𝘵𝘦 𝘩𝘢𝘨𝘰 𝘤𝘢𝘴𝘰 𝘯𝘰 𝘦𝘳𝘦𝘴 𝘮𝘪 𝘥𝘶𝘦ñ𝘰 𝘱𝘢𝘳𝘢 𝘢𝘯𝘥𝘢𝘳 𝘫𝘰𝘥𝘪𝘦𝘯𝘥𝘰.");
+if (plugin.rowner && !isROwner) return m.reply("🪭𝘈𝘮𝘪𝘨𝘰 𝘴𝘰𝘭𝘰 𝘮𝘪 𝘤𝘳𝘦𝘢𝘥𝘰𝘳 𝘱𝘶𝘥𝘦 𝘶𝘴𝘢𝘳 𝘦𝘴𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘥𝘢𝘵𝘦 𝘤𝘶𝘦𝘯𝘵𝘢.");
+if (plugin.admin && !isAdmin) return m.reply("🪭 𝘚𝘰𝘭𝘰 𝘢𝘥𝘮𝘪𝘯 𝘱𝘶𝘦𝘥𝘦𝘯 𝘶𝘵𝘪𝘭𝘪𝘻𝘢𝘳 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰 𝘰 𝘯𝘰 𝘵𝘦 𝘥𝘢𝘴 𝘤𝘶𝘦𝘯𝘵𝘢?.");
+if (plugin.botAdmin && !isBotAdmin) return m.reply(`🪭 𝘔𝘌 𝘛𝘐𝘌𝘕𝘌𝘕𝘚 𝘘𝘜𝘌 𝘋𝘈𝘙 𝘈𝘋𝘔𝘐𝘕 𝘗𝘈𝘙𝘈 𝘗𝘖𝘋𝘌𝘙 𝘜𝘚𝘈𝘙 𝘌𝘚𝘛𝘌 𝘊𝘖𝘔𝘈𝘕𝘋𝘖 𝘐𝘕𝘜𝘛𝘐𝘓.`);
+if (plugin.group && !isGroup) return m.reply("🪭 𝘛𝘜 𝘌𝘙𝘌𝘚 𝘤𝘪𝘦𝘨𝘰? 𝘯𝘰 𝘷𝘦𝘻 𝘲𝘶𝘦 𝘯𝘰 𝘦𝘴 𝘶𝘯 𝘨𝘳𝘶𝘱𝘰 𝘱𝘢𝘳𝘢 𝘶𝘵𝘪𝘭𝘪𝘻𝘢𝘳 𝘦𝘴𝘵𝘦 𝘤𝘰𝘮𝘢𝘯𝘥𝘰");
+if (plugin.private && isGroup) return m.reply("🪭 𝘈𝘮𝘪𝘨𝘶𝘦 𝘷𝘢𝘮𝘰𝘴 𝘢𝘭 𝘱𝘳𝘪𝘷 𝘱𝘢𝘳𝘢 𝘲𝘶𝘦 𝘮𝘦 𝘱𝘶𝘦𝘥𝘢𝘴 𝘶𝘵𝘪𝘭𝘪𝘻𝘢𝘳 𝘣𝘪𝘦𝘯 🫦");
 if (plugin.register) {
 try {
 const result = await db.query('SELECT * FROM usuarios WHERE id = $1', [m.sender]);
 const user = result.rows[0];
-if (!user || user.registered !== true) return m.reply("「NO ESTAS REGISTRADO」\n\nPA NO APARECES EN MI BASE DE DATOS ✋🥸🤚\n\nPara poder usarme escribe el siguente comando\n\nComando: #reg nombre.edad\nEjemplo: #reg elrebelde.21");
+if (!user || user.registered !== true) return m.reply("🚫 NO ESTAS REGISTRADO 🚫\n\nPara poder usarme escribe el siguente comando\n\nEjemplo: #reg Daniel.21");
 } catch (e) {
 console.error(e);
 }}
@@ -745,12 +745,12 @@ const res = await db.query('SELECT limite FROM usuarios WHERE id = $1', [m.sende
 const limite = res.rows[0]?.limite ?? 0;
 
 if (limite < plugin.limit) {
-await m.reply("*⚠ 𝐒𝐮𝐬 𝐝𝐢𝐚𝐦𝐚𝐧𝐭𝐞 💎 𝐬𝐞 𝐡𝐚𝐧 𝐚𝐠𝐨𝐭𝐚𝐝𝐨 𝐩𝐮𝐞𝐝𝐞 𝐜𝐨𝐦𝐩𝐫𝐚𝐫 𝐦𝐚𝐬 𝐮𝐬𝐚𝐧𝐝𝐨 𝐞𝐥 𝐜𝐨𝐦𝐚𝐧𝐝𝐨:* #buy.");
+await m.reply("*🪷 Sus dulces se han agotado puede comprar usando el comando :* #buy.");
 return;
 }
 
 await db.query('UPDATE usuarios SET limite = limite - $1 WHERE id = $2', [plugin.limit, m.sender]);
-await m.reply(`*${plugin.limit} diamante 💎 usado${plugin.limit > 1 ? 's' : ''}.*`);
+await m.reply(`*${plugin.limit} Dulces 🍭 usado${plugin.limit > 1 ? 's' : ''}.*`);
 }
 
 if (plugin.money) {
@@ -759,7 +759,7 @@ const res = await db.query('SELECT money FROM usuarios WHERE id = $1', [m.sender
 const money = res.rows[0]?.money ?? 0
 
 if (money < plugin.money) {
-return m.reply("*NO TIENE SUFICIENTES LOLICOINS 🪙*")
+return m.reply("*NO TIENE SUFICIENTES ANEKA COINS 🪙*")
 }
 
 await db.query('UPDATE usuarios SET money = money - $1 WHERE id = $2', [plugin.money, m.sender])
