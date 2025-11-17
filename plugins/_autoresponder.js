@@ -95,7 +95,7 @@ console.error("❌ No se pudo guardar memoria:", e.message);
 }
 
 const formatted = formatForWhatsApp(result)
-return await conn.reply(m.chat, formatted, m)
+return await conn.reply(m.chat, m)
 //await conn.reply(m.chat, result, m);
 await conn.readMessages([m.key]);
 
