@@ -12,13 +12,13 @@ const total = users.length
 
 await m.react("📣")
 let mensaje = ""
-mensaje += `*⺀ ＡＣＴＩＶＥ ＧＲＵＰＯ 🗣️⺀*\n\n`
+mensaje += `𝓑𝓸𝓶 𝓭𝓲𝓪, 𝓮𝓼𝓽𝓻𝓮𝓵𝓲𝓷𝓱𝓪𝓼! 𝓐 𝓣𝓮𝓻𝓻𝓪 𝓶𝓪𝓷𝓭𝓪 𝓾𝓶 𝓸𝓲 ✨\n\n`
 if (text && text.trim()) {
-mensaje += `❏ *Mensaje:* ${text.trim()}\n`
+mensaje += `*Mensaje:* ${text.trim()}\n`
 }
 mensaje += `*👥 Miembros del grupo:* ${total}\n`
-mensaje += `❏ *Etiquetas:*\n`
-mensaje += users.map(u => `➥ @${u.replace(/@s\.whatsapp\.net|@lid/g, "").replace(/[^0-9]/g, "")}`).join(" \n ")
+mensaje += `*Etiquetas:*\n`
+mensaje += users.map(u => `! 🧺 @${u.replace(/@s\.whatsapp\.net|@lid/g, "").replace(/[^0-9]/g, "")}`).join(" \n ")
 
 await conn.sendMessage(m.chat, { text: mensaje, mentions: users }, { quoted: m })
 } catch (e) {
@@ -58,7 +58,7 @@ numero = res.rows[0]?.num || null
 numero = mem.id.split('@')[0]
 }
 if (numero) {
-teks += `➥ @${numero} - Mensajes: ${mem.messages}\n`
+teks += `! 🧺 @${numero} - Mensajes: ${mem.messages}\n`
 }}
 
 await conn.sendMessage(m.chat, { text: teks, mentions: memberData.map(mem => mem.alt?.endsWith('@s.whatsapp.net') ? mem.alt : mem.id).filter(jid => jid.endsWith('@s.whatsapp.net') || jid.endsWith('@lid')) }, { quoted: m })
